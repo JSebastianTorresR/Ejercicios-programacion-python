@@ -156,5 +156,8 @@ def mcd(num1, num2):
 # Ejemplo.
 # Arreglo: (12,20,30,15)
 # MCD del arreglo: 60
-def mcm(arr):
-    return
+def mcm(arr, MCD):
+    producto=1
+    for i in range(len(arr)):
+        producto *= arr[i]
+    return producto / MCD
