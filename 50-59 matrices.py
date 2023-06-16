@@ -1,14 +1,33 @@
 # 50. Desarrollar un algoritmo que permita sumar dos matrices de n ́umeros reales (enteros).
-
+def suma(mat1, mat2):
+    suma = []
+    for i in range(len(mat1)):
+        suma.append([])
+        for j in range(len(mat1[i])):
+            suma[i].append(mat1[i][j] + mat2[i][j])
+    return suma
 
 # 51. Desarrollar un algoritmo que permita multiplicar dos matrices de n ́umeros reales (enteros).
-
+def multiplicacion(mat1, mat2):
+    mul = []
+    for i in range(len(mat1)):
+        mul.append([])
+        for j in range(len(mat1[i])):
+            mul[i].append(mat1[i][j] * mat2[j][i])
+    return
 
 # 52. Desarrollar un programa que sume los elementos de una columna dada de una matriz.
-
-
+def columna(num , matriz):
+    suma = 0
+    for i in range(len(matriz)):
+        suma += matriz[i][num]
+    return suma
 # 53. Desarrollar un programa que sume los elementos de una fila dada de una matriz.
-
+def columna(num , matriz):
+    suma = 0
+    for i in range(len(matriz)):
+        suma += matriz[num][i]
+    return suma
 
 # 54. Desarrollar un algoritmo que determine si una matriz es m ́agica. Se dice que una matriz
 # cuadrada es m ́agica si la suma de cada una de sus filas, de cada una de sus columnas y de
